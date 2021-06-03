@@ -1,5 +1,4 @@
-cook_book = []
-
-with open('recipes.txt'):
-    pass
-
+with open('recipes.txt') as file:
+    for line in file:
+        if '|' in line:
+            print(line.strip())
